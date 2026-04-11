@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charsac Technology | Software Development Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- OFFCANVAS OVERLAY -->
+  <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+  <!-- OFFCANVAS PANEL (outside navbar to avoid stacking context trap) -->
+  <ul class="nav-links" id="navLinks">
+    <button class="nav-close" id="navClose" aria-label="Close menu">&#10005;</button>
+    <a href="#home" class="nav-brand">
+      <span style="color:var(--primary)">&#9670;</span>
+      Charsac<span style="color:var(--primary)">Tech</span>
+    </a>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+  </ul>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9670;</span>
+        Charsac<span class="accent">Tech</span>
+      </a>
+      <div class="nav-desktop-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="btn-nav">Contact Us</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-bg"></div>
+
+    <!-- Rocket Scene -->
+    <div class="rocket-scene" aria-hidden="true">
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-dot dot-1"></div>
+      <div class="orbit-dot dot-2"></div>
+      <div class="rocket-glow"></div>
+      <div class="rocket-body">&#128640;</div>
+      <div class="rocket-trail">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="code-float float-1">&lt;/&gt;</div>
+      <div class="code-float float-2">{ }</div>
+      <div class="code-float float-3">API</div>
+      <div class="code-float float-4">UI/UX</div>
+    </div>
+
+    <div class="container hero-content">
+      <p class="hero-tag">&#10024; Next-Gen Software Solutions</p>
+      <h1>We Turn Your Ideas Into<br/><span class="gradient-text" id="typewriter"></span><span class="cursor">|</span></h1>
+      <p class="hero-sub">At Charsac Technology, your idea is not just welcome — it's our mission. Whether it's a rough concept or a full blueprint, we refine it, engineer it, and launch it into reality.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">&#128640; Share Your Idea</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span>50+</span><p>Projects Delivered</p></div>
+        <div class="stat"><span>30+</span><p>Happy Clients</p></div>
+        <div class="stat"><span>5+</span><p>Years Experience</p></div>
+        <div class="stat"><span>100%</span><p>Client Satisfaction</p></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- MISSION BANNER -->
+  <section class="mission">
+    <div class="mission-particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+    <div class="container mission-content">
+      <div class="mission-icon-wrap">
+        <span class="mission-bulb">&#128161;</span>
+        <div class="mission-pulse"></div>
+      </div>
+      <div class="mission-text">
+        <h2>Got an Idea? <span class="gradient-text">That's Where We Begin.</span></h2>
+        <p>Every great product started as a spark of an idea. Rough sketches, voice notes, napkin drawings — bring it all. Our mission is to take your vision, sharpen it, and engineer it into a product the world will use. <strong>Your idea. Our craft. Real results.</strong></p>
+        <div class="mission-pillars">
+          <div class="pillar"><span>&#128270;</span> Refine</div>
+          <div class="pillar-arrow">&#8594;</div>
+          <div class="pillar"><span>&#9881;</span> Engineer</div>
+          <div class="pillar-arrow">&#8594;</div>
+          <div class="pillar"><span>&#128640;</span> Launch</div>
+          <div class="pillar-arrow">&#8594;</div>
+          <div class="pillar"><span>&#127775;</span> Scale</div>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary">Start With Your Idea &#8594;</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card card-1">
+          <div class="card-icon">&#128640;</div>
+          <p>Rapid Delivery</p>
+        </div>
+        <div class="about-card card-2">
+          <div class="card-icon">&#128274;</div>
+          <p>Secure by Design</p>
+        </div>
+        <div class="about-card card-3">
+          <div class="card-icon">&#127775;</div>
+          <p>Quality First</p>
+        </div>
+        <div class="about-card card-4">
+          <div class="card-icon">&#128161;</div>
+          <p>Idea to Reality</p>
+        </div>
+        <div class="about-blob"></div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">About Us</p>
+        <h2>Turning Ideas Into <span class="gradient-text">Powerful Products</span></h2>
+        <p>At Charsac Technology, we are a team of passionate engineers and designers committed to one thing — bringing your ideas to life. No idea is too early, too ambitious, or too rough. We help you refine it and build it right.</p>
+        <p>From a startup's first MVP to an enterprise system powering thousands of users, we have done it. We combine cutting-edge technologies with best-in-class engineering to build products that last.</p>
+        <div class="about-values">
+          <div class="value-item"><span class="check">&#10003;</span> Agile &amp; Transparent</div>
+          <div class="value-item"><span class="check">&#10003;</span> Client-Centric Approach</div>
+          <div class="value-item"><span class="check">&#10003;</span> On-Time Delivery</div>
+          <div class="value-item"><span class="check">&#10003;</span> Post-Launch Support</div>
+          <div class="value-item"><span class="check">&#10003;</span> Idea Refinement Sessions</div>
+          <div class="value-item"><span class="check">&#10003;</span> Dedicated Project Manager</div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Do</p>
+        <h2>Our <span class="gradient-text">Services</span></h2>
+        <p class="section-sub">End-to-end software development services designed to take your idea from concept to a thriving product.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#127760;</div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites and web applications built with the latest frameworks for optimal performance and user experience.</p>
+          <ul>
+            <li>React / Next.js / Vue</li>
+            <li>Node.js / Django / Laravel</li>
+            <li>RESTful &amp; GraphQL APIs</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon">&#128241;</div>
+          <h3>Mobile App Development</h3>
+          <p>Cross-platform and native mobile applications for iOS and Android that deliver seamless experiences on every device.</p>
+          <ul>
+            <li>React Native / Flutter</li>
+            <li>iOS (Swift) / Android (Kotlin)</li>
+            <li>App Store Deployment</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9729;</div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Scalable cloud infrastructure, CI/CD pipelines, and DevOps practices that keep your systems running smoothly.</p>
+          <ul>
+            <li>AWS / Azure / GCP</li>
+            <li>Docker &amp; Kubernetes</li>
+            <li>CI/CD Automation</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#129302;</div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Intelligent solutions powered by AI and ML to automate processes, generate insights, and create smarter products.</p>
+          <ul>
+            <li>Predictive Analytics</li>
+            <li>NLP &amp; Chatbots</li>
+            <li>Computer Vision</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128202;</div>
+          <h3>Enterprise Software</h3>
+          <p>Custom ERP, CRM, and enterprise-grade applications tailored to streamline your operations and reduce costs.</p>
+          <ul>
+            <li>ERP &amp; CRM Systems</li>
+            <li>Workflow Automation</li>
+            <li>Legacy Modernization</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128737;</div>
+          <h3>Cybersecurity</h3>
+          <p>Comprehensive security assessments, audits, and implementations to protect your data and digital assets.</p>
+          <ul>
+            <li>Penetration Testing</li>
+            <li>Security Audits</li>
+            <li>Compliance (GDPR, ISO)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech section" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Technologies</p>
+        <h2>Our <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-sub">We leverage modern, battle-tested technologies to build future-proof solutions.</p>
+      </div>
+      <div class="tech-categories">
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <div class="tech-pills">
+            <span>React</span><span>Next.js</span><span>Vue.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <div class="tech-pills">
+            <span>Node.js</span><span>Python</span><span>Django</span><span>Laravel</span><span>Go</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Mobile</h4>
+          <div class="tech-pills">
+            <span>React Native</span><span>Flutter</span><span>Swift</span><span>Kotlin</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Database &amp; Cloud</h4>
+          <div class="tech-pills">
+            <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>AWS</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Work</p>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">A glimpse of products we have built — each one started as just an idea.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="btn btn-outline-sm">View Details</a>
+            </div>
+            <span class="portfolio-emoji">&#128717;</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">E-Commerce</span>
+            <h3>ShopEase Platform</h3>
+            <p>Full-stack e-commerce platform with real-time inventory management and AI-powered recommendations.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="btn btn-outline-sm">View Details</a>
+            </div>
+            <span class="portfolio-emoji">&#127973;</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Healthcare</span>
+            <h3>MediTrack System</h3>
+            <p>Hospital management system streamlining patient records, appointments, and billing for clinics.</p>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="btn btn-outline-sm">View Details</a>
+            </div>
+            <span class="portfolio-emoji">&#128200;</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">FinTech</span>
+            <h3>FinSight Dashboard</h3>
+            <p>Real-time financial analytics platform with predictive modeling and automated reporting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM / CEO -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">The People</p>
+        <h2>Meet the <span class="gradient-text">Minds Behind</span> Charsac</h2>
+        <p class="section-sub">Driven by passion, led by vision — the people who turn your ideas into reality.</p>
+      </div>
+
+      <!-- CEO Spotlight -->
+      <div class="ceo-spotlight">
+        <div class="ceo-image-wrap">
+          <div class="ceo-photo">
+            <div class="photo-placeholder">
+              <span class="photo-icon">&#128247;</span>
+              <p>Add CEO Photo Here</p>
+              <small>Replace with &lt;img&gt; tag</small>
+            </div>
+            <div class="ceo-status"><span class="status-dot"></span> Available for Projects</div>
+          </div>
+          <div class="ceo-social">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="ceo-text">
+          <span class="ceo-badge">&#128081; CEO &amp; Founder</span>
+          <h2>[Your Name]</h2>
+          <p class="ceo-title">Chief Executive Officer &amp; Lead Architect</p>
+          <p>A visionary technologist and entrepreneur who built Charsac Technology on a single belief: <em>every great idea deserves a world-class team to bring it to life.</em> With deep expertise spanning full-stack engineering, system architecture, and product strategy, our founder leads every project with a hands-on approach.</p>
+          <p>The philosophy here is simple — we don't just write code. We sit with you, understand your problem, challenge your assumptions, sharpen your idea, and build something truly remarkable together.</p>
+          <div class="ceo-skills">
+            <span>Full-Stack Dev</span><span>System Design</span><span>Product Strategy</span><span>AI &amp; ML</span><span>Team Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collaborators -->
+      <div class="collaborators">
+        <h3 class="collab-title">Our <span class="gradient-text">Collaborators</span></h3>
+        <p class="collab-sub">A handpicked network of specialists we collaborate with on projects.</p>
+        <div class="collab-grid">
+          <div class="collab-card">
+            <div class="collab-photo">
+              <div class="collab-placeholder">
+                <span>&#128100;</span>
+                <p>Collaborator Photo</p>
+              </div>
+            </div>
+            <h4>[Collaborator Name]</h4>
+            <p class="collab-role">Senior UI/UX Designer</p>
+            <p class="collab-bio">Specializes in crafting beautiful, user-centred interfaces that convert and delight.</p>
+          </div>
+          <div class="collab-card">
+            <div class="collab-photo">
+              <div class="collab-placeholder">
+                <span>&#128100;</span>
+                <p>Collaborator Photo</p>
+              </div>
+            </div>
+            <h4>[Collaborator Name]</h4>
+            <p class="collab-role">Backend &amp; DevOps Engineer</p>
+            <p class="collab-bio">Expert in cloud infrastructure, scalable APIs, and keeping systems blazing fast.</p>
+          </div>
+          <div class="collab-card">
+            <div class="collab-photo">
+              <div class="collab-placeholder">
+                <span>&#128100;</span>
+                <p>Collaborator Photo</p>
+              </div>
+            </div>
+            <h4>[Collaborator Name]</h4>
+            <p class="collab-role">Mobile App Developer</p>
+            <p class="collab-bio">Builds cross-platform mobile experiences that feel truly native on iOS and Android.</p>
+          </div>
+        </div>
+        <div class="join-team">
+          <p>Are you a skilled developer or designer? <a href="#contact">Join our network &#8594;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">How We Work</p>
+        <h2>From <span class="gradient-text">Idea to Reality</span></h2>
+        <p class="section-sub">A proven, transparent process that keeps you in control at every stage.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-icon">&#128161;</div>
+          <h3>Discovery</h3>
+          <p>We sit with you, listen deeply, and analyze your idea — refining it into a clear, actionable roadmap.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-icon">&#127912;</div>
+          <h3>Design</h3>
+          <p>Our designers create intuitive wireframes, prototypes, and UI/UX designs for your approval.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-icon">&#128187;</div>
+          <h3>Development</h3>
+          <p>Agile sprints with regular demos ensure the product evolves with your feedback throughout.</p>
+        </div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-icon">&#128640;</div>
+          <h3>Launch &amp; Scale</h3>
+          <p>We deploy, monitor, and grow your product — ensuring it stays secure, fast, and up-to-date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Client Reviews</p>
+        <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-sub">Don't just take our word for it — hear from the people we have worked with.</p>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Charsac Technology turned my vague idea into a fully functional platform in under 3 months. They didn't just build what I asked — they improved it. The team's dedication and communication were exceptional throughout."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #6C63FF, #00D4FF);">
+                  <span>AO</span>
+                </div>
+                <div>
+                  <strong>Adebayo Okafor</strong>
+                  <p>Founder, QuickMart Nigeria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"I came to them with just a concept scribbled in a notebook. Six months later we have a live healthcare app used by over 2,000 patients. They are more than developers — they are true partners in building something meaningful."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                  <span>FN</span>
+                </div>
+                <div>
+                  <strong>Dr. Fatima Nwosu</strong>
+                  <p>CEO, HealthBridge Africa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Incredible team. Our fintech dashboard went from idea to production in record time. They challenged us to think bigger, delivered flawlessly, and have been rock-solid partners for post-launch support. Cannot recommend them enough."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                  <span>EM</span>
+                </div>
+                <div>
+                  <strong>Emmanuel Madu</strong>
+                  <p>CTO, ClearPay Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"What sets Charsac apart is their belief in your idea before you even fully believe in it yourself. They asked the right questions, pushed back where it mattered, and delivered a product that exceeded every expectation I had going in."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                  <span>SI</span>
+                </div>
+                <div>
+                  <strong>Sarah Ibrahim</strong>
+                  <p>Product Lead, EduFlow Ltd</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Professional, proactive, and technically brilliant. They built our enterprise ERP system from the ground up and delivered on time. Their post-launch support is outstanding — any issue is resolved within hours."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                  <span>KC</span>
+                </div>
+                <div>
+                  <strong>Kingsley Chukwu</strong>
+                  <p>Director of Operations, Vanta Group</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+        <button class="slider-btn next-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="slider-dots" id="sliderDots">
+        <button class="dot active" data-index="0" aria-label="Go to slide 1"></button>
+        <button class="dot" data-index="1" aria-label="Go to slide 2"></button>
+        <button class="dot" data-index="2" aria-label="Go to slide 3"></button>
+        <button class="dot" data-index="3" aria-label="Go to slide 4"></button>
+        <button class="dot" data-index="4" aria-label="Go to slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-tag">Get In Touch</p>
+        <h2>Let's Build Your <span class="gradient-text">Vision Together</span></h2>
+        <p>Have an idea — big, small, half-formed, or crystal clear? Share it. We'll take it from there. We respond within 24 hours with a custom plan.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">&#128231;</span>
+            <div>
+              <strong>Email</strong>
+              <p>hello@charsactech.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <strong>WhatsApp / Phone</strong>
+              <p>+234 812 265 6972</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&#128205;</span>
+            <div>
+              <strong>Location</strong>
+              <p>Remote-First &mdash; Worldwide</p>
+            </div>
+          </div>
+        </div>
+        <div class="wa-direct">
+          <p>Prefer to chat directly?</p>
+          <a href="https://wa.me/2348122656972" target="_blank" rel="noopener" class="btn btn-wa">
+            <span>&#128172;</span> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp (optional)</label>
+          <input type="tel" id="phone" placeholder="+234 800 000 0000" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service">
+            <option value="">Select a service...</option>
+            <option>Web Development</option>
+            <option>Mobile App Development</option>
+            <option>Cloud &amp; DevOps</option>
+            <option>AI &amp; Machine Learning</option>
+            <option>Enterprise Software</option>
+            <option>Cybersecurity</option>
+            <option>Just an Idea — Help Me Figure It Out</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Idea / Project Description</label>
+          <textarea id="message" rows="4" placeholder="Describe your idea or project — even a rough concept is fine. We'll help you shape it..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+          <span id="btnText">&#128172; Send via WhatsApp &amp; Get a Response</span>
+        </button>
+        <p class="form-note">Your message will be sent directly to our WhatsApp for a faster response.</p>
+        <div class="form-success" id="formSuccess">
+          &#128640; Message sent! Opening WhatsApp now. We'll get back to you shortly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#9670;</span>
+          Charsac<span class="accent">Tech</span>
+        </a>
+        <p>Your idea is our mission. We build software that empowers businesses to innovate, scale, and thrive in the digital era.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="https://wa.me/2348122656972" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Mobile Apps</a></li>
+          <li><a href="#services">Cloud &amp; DevOps</a></li>
+          <li><a href="#services">AI &amp; ML</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@charsactech.com">hello@charsactech.com</a></li>
+          <li><a href="https://wa.me/2348122656972" target="_blank" rel="noopener">+234 812 265 6972</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Charsac Technology. All rights reserved. &mdash; <em>Your idea. Our mission. Real results.</em></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
