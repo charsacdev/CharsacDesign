@@ -1680,6 +1680,19 @@ h4 { font-size: 1rem; font-weight: 600; }
 
   .nav-desktop-links { display: none; }
   .hamburger { display: flex; }
+
+  .rocket-scene {
+    right: 50%;
+    top: auto;
+    bottom: 80px;
+    transform: translateX(50%);
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+    z-index: 0;
+  }
+  .rocket-body { font-size: 3.5rem; }
+  .rocket-glow { width: 120px; height: 120px; }
   .nav-container { position: relative; }
 
   .hero-stats { gap: 28px; }
