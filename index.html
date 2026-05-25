@@ -15,14 +15,13 @@
   <!-- OFFCANVAS PANEL (outside navbar to avoid stacking context trap) -->
   <ul class="nav-links" id="navLinks">
     <button class="nav-close" id="navClose" aria-label="Close menu">&#10005;</button>
-    <a href="#home" class="nav-brand">
-      <span style="color:var(--primary)">&#9670;</span>
-      Charsac<span style="color:var(--primary)">Tech</span>
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logoi.png" alt="Charsac Technology" class="logo-img">
     </a>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#team">Team</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html#team">Team</a></li>
     <li><a href="#testimonials">Reviews</a></li>
     <li><a href="#contact" class="btn-nav">Contact Us</a></li>
   </ul>
@@ -30,15 +29,14 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">
-        <span class="logo-icon">&#9670;</span>
-        Charsac<span class="accent">Tech</span>
+      <a href="index.html" class="logo">
+        <img src="assets/logoi.png" alt="Charsac Technology" class="logo-img">
       </a>
       <div class="nav-desktop-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#team">Team</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html#team">Team</a>
         <a href="#testimonials">Reviews</a>
         <a href="#contact" class="btn-nav">Contact Us</a>
       </div>
@@ -153,7 +151,10 @@
           <div class="value-item"><span class="check">&#10003;</span> Idea Refinement Sessions</div>
           <div class="value-item"><span class="check">&#10003;</span> Dedicated Project Manager</div>
         </div>
-        <a href="#contact" class="btn btn-primary">Work With Us</a>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#contact" class="btn btn-primary">Work With Us</a>
+          <a href="about.html" class="btn btn-outline">Our Full Story &#8594;</a>
+        </div>
       </div>
     </div>
   </section>
@@ -165,6 +166,7 @@
         <p class="section-tag">What We Do</p>
         <h2>Our <span class="gradient-text">Services</span></h2>
         <p class="section-sub">End-to-end software development services designed to take your idea from concept to a thriving product.</p>
+        <a href="services.html" class="btn btn-outline" style="margin-top:8px;">View All Services &#8594;</a>
       </div>
       <div class="services-grid">
         <div class="service-card">
@@ -275,7 +277,8 @@
       <div class="section-header">
         <p class="section-tag">Our Work</p>
         <h2>Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-sub">A glimpse of products we have built — each one started as just an idea.</p>
+        <p class="section-sub">A glimpse of products we have built &mdash; each one started as just an idea.</p>
+        <a href="portfolio.html" class="btn btn-outline" style="margin-top:8px;">View Full Portfolio &#8594;</a>
       </div>
       <div class="portfolio-grid">
         <div class="portfolio-card">
@@ -334,11 +337,7 @@
       <div class="ceo-spotlight">
         <div class="ceo-image-wrap">
           <div class="ceo-photo">
-            <div class="photo-placeholder">
-              <span class="photo-icon">&#128247;</span>
-              <p>Add CEO Photo Here</p>
-              <small>Replace with &lt;img&gt; tag</small>
-            </div>
+            <img src="assets/ceo.jpeg" alt="Ogbonna Michael - CEO &amp; Founder, Charsac Technology" class="ceo-real-img">
             <div class="ceo-status"><span class="status-dot"></span> Available for Projects</div>
           </div>
           <div class="ceo-social">
@@ -349,7 +348,7 @@
         </div>
         <div class="ceo-text">
           <span class="ceo-badge">&#128081; CEO &amp; Founder</span>
-          <h2>[Your Name]</h2>
+          <h2>Ogbonna Michael</h2>
           <p class="ceo-title">Chief Executive Officer &amp; Lead Architect</p>
           <p>A visionary technologist and entrepreneur who built Charsac Technology on a single belief: <em>every great idea deserves a world-class team to bring it to life.</em> With deep expertise spanning full-stack engineering, system architecture, and product strategy, our founder leads every project with a hands-on approach.</p>
           <p>The philosophy here is simple — we don't just write code. We sit with you, understand your problem, challenge your assumptions, sharpen your idea, and build something truly remarkable together.</p>
@@ -361,42 +360,103 @@
 
       <!-- Collaborators -->
       <div class="collaborators">
-        <h3 class="collab-title">Our <span class="gradient-text">Collaborators</span></h3>
-        <p class="collab-sub">A handpicked network of specialists we collaborate with on projects.</p>
+        <h3 class="collab-title">Meet the <span class="gradient-text">Full Team</span></h3>
+        <p class="collab-sub">The specialists behind every project we deliver.</p>
         <div class="collab-grid">
+
+          <!-- Ogodo Onyinyechi — Marketer -->
           <div class="collab-card">
             <div class="collab-photo">
-              <div class="collab-placeholder">
-                <span>&#128100;</span>
-                <p>Collaborator Photo</p>
-              </div>
+              <img src="assets/marketer.PNG" alt="Ogodo Onyinyechi" class="collab-real-img">
             </div>
-            <h4>[Collaborator Name]</h4>
-            <p class="collab-role">Senior UI/UX Designer</p>
-            <p class="collab-bio">Specializes in crafting beautiful, user-centred interfaces that convert and delight.</p>
+            <h4>Ogodo Onyinyechi</h4>
+            <p class="collab-role">Marketing Lead</p>
+            <p class="collab-bio">Drives Charsac&rsquo;s brand growth, connecting our engineering capabilities with businesses that need them most.</p>
           </div>
+
+          <!-- Orji Precious — Head of Operations (SVG) -->
           <div class="collab-card">
             <div class="collab-photo">
-              <div class="collab-placeholder">
-                <span>&#128100;</span>
-                <p>Collaborator Photo</p>
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="collab-svg" aria-label="Orji Precious">
+                <defs>
+                  <linearGradient id="bg-op" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#5B21B6"/>
+                    <stop offset="100%" stop-color="#8B5CF6"/>
+                  </linearGradient>
+                  <clipPath id="clip-op"><circle cx="50" cy="50" r="50"/></clipPath>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#bg-op)"/>
+                <!-- head -->
+                <circle cx="50" cy="37" r="16" fill="rgba(255,255,255,0.92)" clip-path="url(#clip-op)"/>
+                <!-- shoulders/body -->
+                <path d="M5 100 Q5 72 50 68 Q95 72 95 100 Z" fill="rgba(255,255,255,0.88)" clip-path="url(#clip-op)"/>
+                <!-- collar detail -->
+                <path d="M42 68 L50 76 L58 68" fill="none" stroke="rgba(91,33,182,0.5)" stroke-width="1.5" clip-path="url(#clip-op)"/>
+                <!-- hair (long) -->
+                <path d="M34 37 Q32 52 34 62" stroke="rgba(255,255,255,0.25)" stroke-width="5" fill="none" stroke-linecap="round" clip-path="url(#clip-op)"/>
+                <path d="M66 37 Q68 52 66 62" stroke="rgba(255,255,255,0.25)" stroke-width="5" fill="none" stroke-linecap="round" clip-path="url(#clip-op)"/>
+                <path d="M35 28 Q50 22 65 28" stroke="rgba(255,255,255,0.22)" stroke-width="6" fill="none" clip-path="url(#clip-op)"/>
+              </svg>
             </div>
-            <h4>[Collaborator Name]</h4>
-            <p class="collab-role">Backend &amp; DevOps Engineer</p>
-            <p class="collab-bio">Expert in cloud infrastructure, scalable APIs, and keeping systems blazing fast.</p>
+            <h4>Orji Precious</h4>
+            <p class="collab-role">Head of Operations</p>
+            <p class="collab-bio">Oversees every project&rsquo;s operational engine, ensuring timelines are met and clients receive consistently excellent delivery.</p>
           </div>
+
+          <!-- Victor Kalu — Lead Design (SVG) -->
           <div class="collab-card">
             <div class="collab-photo">
-              <div class="collab-placeholder">
-                <span>&#128100;</span>
-                <p>Collaborator Photo</p>
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="collab-svg" aria-label="Victor Kalu">
+                <defs>
+                  <linearGradient id="bg-vk" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0369A1"/>
+                    <stop offset="100%" stop-color="#06B6D4"/>
+                  </linearGradient>
+                  <clipPath id="clip-vk"><circle cx="50" cy="50" r="50"/></clipPath>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#bg-vk)"/>
+                <!-- head -->
+                <circle cx="50" cy="37" r="16" fill="rgba(255,255,255,0.92)" clip-path="url(#clip-vk)"/>
+                <!-- shoulders/body -->
+                <path d="M5 100 Q5 72 50 68 Q95 72 95 100 Z" fill="rgba(255,255,255,0.88)" clip-path="url(#clip-vk)"/>
+                <!-- collar detail -->
+                <path d="M42 68 L50 76 L58 68" fill="none" stroke="rgba(3,105,161,0.5)" stroke-width="1.5" clip-path="url(#clip-vk)"/>
+                <!-- short hair (male) -->
+                <path d="M34 30 Q50 24 66 30 Q66 37 50 37 Q34 37 34 30Z" fill="rgba(255,255,255,0.2)" clip-path="url(#clip-vk)"/>
+              </svg>
             </div>
-            <h4>[Collaborator Name]</h4>
-            <p class="collab-role">Mobile App Developer</p>
-            <p class="collab-bio">Builds cross-platform mobile experiences that feel truly native on iOS and Android.</p>
+            <h4>Victor Kalu</h4>
+            <p class="collab-role">Lead Designer</p>
+            <p class="collab-bio">Translates complex functionality into elegant, intuitive interfaces that users love and businesses are proud to show off.</p>
           </div>
+
+          <!-- Praize Adminchimnobi — Head of Strategy (SVG) -->
+          <div class="collab-card">
+            <div class="collab-photo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="collab-svg" aria-label="Praize Adminchimnobi">
+                <defs>
+                  <linearGradient id="bg-pa" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#B45309"/>
+                    <stop offset="100%" stop-color="#F59E0B"/>
+                  </linearGradient>
+                  <clipPath id="clip-pa"><circle cx="50" cy="50" r="50"/></clipPath>
+                </defs>
+                <circle cx="50" cy="50" r="50" fill="url(#bg-pa)"/>
+                <!-- head -->
+                <circle cx="50" cy="37" r="16" fill="rgba(255,255,255,0.92)" clip-path="url(#clip-pa)"/>
+                <!-- shoulders/body -->
+                <path d="M5 100 Q5 72 50 68 Q95 72 95 100 Z" fill="rgba(255,255,255,0.88)" clip-path="url(#clip-pa)"/>
+                <!-- collar detail -->
+                <path d="M42 68 L50 76 L58 68" fill="none" stroke="rgba(180,83,9,0.5)" stroke-width="1.5" clip-path="url(#clip-pa)"/>
+                <!-- short hair (male) -->
+                <path d="M34 30 Q50 24 66 30 Q66 37 50 37 Q34 37 34 30Z" fill="rgba(255,255,255,0.2)" clip-path="url(#clip-pa)"/>
+              </svg>
+            </div>
+            <h4>Praize Adminchimnobi</h4>
+            <p class="collab-role">Head of Strategy</p>
+            <p class="collab-bio">Shapes Charsac&rsquo;s direction and growth, identifying the right opportunities and positioning us as the go-to tech partner for ambitious founders.</p>
+          </div>
+
         </div>
         <div class="join-team">
           <p>Are you a skilled developer or designer? <a href="#contact">Join our network &#8594;</a></p>
@@ -647,9 +707,8 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-icon">&#9670;</span>
-          Charsac<span class="accent">Tech</span>
+        <a href="index.html" class="logo">
+          <img src="assets/logoi.png" alt="Charsac Technology" class="logo-img">
         </a>
         <p>Your idea is our mission. We build software that empowers businesses to innovate, scale, and thrive in the digital era.</p>
         <div class="social-links">
